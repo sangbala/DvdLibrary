@@ -79,12 +79,12 @@ public class DvdLibraryView {
 
     public void displayDvd(Dvd dvd) {
         if (dvd != null) {
-            io.print(dvd.getTitle());
-            io.print(dvd.getReleaseDate());
-            io.print(dvd.getMpaaRating());
-            io.print(dvd.getDirectorName());
-            io.print(dvd.getStudio());
-            io.print(dvd.getRatingOrNote());
+            io.print("Dvd title: "+dvd.getTitle());
+            io.print("Dvd Release Date: "+dvd.getReleaseDate());
+            io.print("MPAA Rating: "+dvd.getMpaaRating());
+            io.print("Director's Name: "+dvd.getDirectorName());
+            io.print("Studio: "+dvd.getStudio());
+            io.print("Rating or Note "+ dvd.getRatingOrNote());
             io.print("");
         } else {
             io.print("No such Dvd.");
@@ -120,6 +120,12 @@ public class DvdLibraryView {
     public void displaySearchResult(Dvd dvd) {
         if (dvd != null) {
             io.print(dvd.getTitle() + " is found.");
+            io.print("Dvd title: "+dvd.getTitle());
+            io.print("Dvd Release Date: "+dvd.getReleaseDate());
+            io.print("MPAA Rating: "+dvd.getMpaaRating());
+            io.print("Director's Name: "+dvd.getDirectorName());
+            io.print("Studio: "+dvd.getStudio());
+            io.print("Rating or Note "+ dvd.getRatingOrNote());
             io.print("");
         } else {
             io.print("No such Dvd.");
